@@ -9,7 +9,7 @@ public class P3 {
             int max = 0;
             Map<Character, Integer> map = new HashMap<Character, Integer>();
             for(int i = 0, j = 0; i < s.length(); i ++) {
-                if(map.containsKey(s.charAt(i))){
+                if (map.containsKey(s.charAt(i))) {
                     j = Math.max(map.get(s.charAt(i)) + 1, j);
                 }
                 max = Math.max(max, i - j + 1);
